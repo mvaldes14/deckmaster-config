@@ -78,7 +78,7 @@
       icon = "~/git/deckmaster-config/assets/steam.png"
       label = "Steam"
     [keys.action]
-      exec = "flatpak run com.spotify.Client"
+      exec = "flatpak run com.valvesoftware.Steam"
 [[keys]]
   index = 9
   [keys.widget]
