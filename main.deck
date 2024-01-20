@@ -15,7 +15,7 @@
       icon = "~/git/deckmaster-config/assets/play.png"
       label = "Starting"
     [keys.action]
-      exec = "python3 ~/git/sandbox/pythong/main.py Starting"
+      exec = "python3 ~/git/obs-go-cli/obs-go-cli Starting"
 [[keys]]
   index = 2
   [keys.widget]
@@ -24,7 +24,7 @@
       icon = "~/git/deckmaster-config/assets/secret.png"
       label = "Secrets"
     [keys.action]
-      exec = "python3 ~/git/sandbox/pythong/main.py Secrets"
+      exec = "python3 ~/git/obs-go-cli/obs-go-cli Secrets"
 [[keys]]
   index = 3
   [keys.widget]
@@ -33,7 +33,7 @@
       icon = "~/git/deckmaster-config/assets/code.png"
       label = "Coding"
     [keys.action]
-      exec = "python3 ~/git/sandbox/pythong/main.py Coding"
+      exec = "python3 ~/git/obs-go-cli/obs-go-cli Coding"
 [[keys]]
   index = 4
   [keys.widget]
@@ -42,7 +42,7 @@
       icon = "~/git/deckmaster-config/assets/stop.png"
       label = "Ending"
     [keys.action]
-      exec = "python3 ~/git/sandbox/pythong/main.py Ending"
+      exec = "python3 ~/git/obs-go-cli/obs-go-cli Ending"
 [[keys]]
   index = 5
   [keys.widget]
