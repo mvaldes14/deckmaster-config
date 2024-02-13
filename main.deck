@@ -15,7 +15,7 @@
       icon = "~/git/deckmaster-config/assets/play.png"
       label = "Starting"
     [keys.action]
-      exec = "python3 ~/git/obs-go-cli/obs-go-cli Starting"
+      exec = "~/git/obs-go-cli/obs-go-cli scenes Starting"
 [[keys]]
   index = 2
   [keys.widget]
@@ -24,7 +24,7 @@
       icon = "~/git/deckmaster-config/assets/secret.png"
       label = "Secrets"
     [keys.action]
-      exec = "python3 ~/git/obs-go-cli/obs-go-cli Secrets"
+      exec = "~/git/obs-go-cli/obs-go-cli scenes Secrets"
 [[keys]]
   index = 3
   [keys.widget]
@@ -33,7 +33,7 @@
       icon = "~/git/deckmaster-config/assets/code.png"
       label = "Coding"
     [keys.action]
-      exec = "python3 ~/git/obs-go-cli/obs-go-cli Coding"
+      exec = "~/git/obs-go-cli/obs-go-cli scenes Coding"
 [[keys]]
   index = 4
   [keys.widget]
@@ -42,9 +42,45 @@
       icon = "~/git/deckmaster-config/assets/stop.png"
       label = "Ending"
     [keys.action]
-      exec = "python3 ~/git/obs-go-cli/obs-go-cli Ending"
+      exec = "~/git/obs-go-cli/obs-go-cli scenes Ending"
 [[keys]]
   index = 5
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "~/git/deckmaster-config/assets/start-stream.png"
+      label = "Start Stream"
+    [keys.action]
+      exec = "~/git/obs-go-cli/obs-go-cli stream start"
+[[keys]]
+  index = 6
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "~/git/deckmaster-config/assets/stop-stream.png"
+      label = "Stop Stream"
+    [keys.action]
+      exec = "~/git/obs-go-cli/obs-go-cli stream stop"
+[[keys]]
+  index = 7
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "~/git/deckmaster-config/assets/talk.png"
+      label = "Talk"
+    [keys.action]
+      exec = "~/git/obs-go-cli/obs-go-cli scenes Talk"
+[[keys]]
+  index = 8
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "~/git/deckmaster-config/assets/gaming.png"
+      label = "Gaming"
+    [keys.action]
+      exec = "~/git/obs-go-cli/obs-go-cli scenes Gaming"
+[[keys]]
+  index = 9
   [keys.widget]
     id = "button"
     [keys.widget.config]
@@ -52,74 +88,3 @@
       label = "Spotify"
     [keys.action]
       exec = "flatpak run com.spotify.Client"
-[[keys]]
-  index = 6
-  [keys.widget]
-    id = "button"
-    [keys.widget.config]
-      icon = "~/git/deckmaster-config/assets/obsidian.png"
-      label = "Obsidian"
-    [keys.action]
-      exec = "flatpak run md.obsidian.Obsidian"
-[[keys]]
-  index = 7
-  [keys.widget]
-    id = "button"
-    [keys.widget.config]
-      icon = "~/git/deckmaster-config/assets/thunderbird.png"
-      label = "TB"
-    [keys.action]
-      exec = "flatpak run org.mozilla.Thunderbird"
-[[keys]]
-  index = 8
-  [keys.widget]
-    id = "button"
-    [keys.widget.config]
-      icon = "~/git/deckmaster-config/assets/steam.png"
-      label = "Steam"
-    [keys.action]
-      exec = "flatpak run com.valvesoftware.Steam"
-[[keys]]
-  index = 9
-  [keys.widget]
-    id = "button"
-    [keys.widget.config]
-      icon = "~/git/deckmaster-config/assets/volume.png"
-      label = "Volume"
-    [keys.action]
-      exec = "pavucontrol"
-[[keys]]
-  index = 10
-  [keys.widget]
-    id = "time"
-    [keys.widget.config]
-      format = "%H;%i;%s"
-      font = "bold;regular;thin"
-[[keys]]
-  index = 11
-  [keys.widget]
-    id = "top"
-    [keys.widget.config]
-      mode = "cpu"
-      fillColor = "#d497de"
-[[keys]]
-  index = 12
-  [keys.widget]
-    id = "top"
-    [keys.widget.config]
-      mode = "memory"
-[[keys]]
-  index = 13
-  [keys.widget]
-    id = "weather"
-    [keys.widget.config]
-      location = "Chaska"
-      unit = "celsius"
-      flatten = true
-[[keys]]
-  index = 14
-  [keys.widget]
-    id = "time"
-    [keys.widget.config]
-      format = "%l;%d;%M"
-      font = "regular;bold;regular"

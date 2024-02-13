@@ -1,0 +1,12 @@
+[Unit]
+Description=Deckmaster Service
+
+[Service]
+User=$USER
+Group=$USER
+ExecStart=deckmaster --deck /home/$USER/git/deckmaster-config/main.deck
+Restart=on-failure
+ExecReload=kill -HUP $MAINPID
+
+[Install]
+WantedBy=default.target
