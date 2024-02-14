@@ -88,3 +88,55 @@
       label = "Spotify"
     [keys.action]
       exec = "flatpak run com.spotify.Client"
+[[keys]]
+  index = 10
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "~/git/deckmaster-config/assets/play-music.png"
+      label = "Play"
+    [keys.action]
+      exec = "/home/mvaldes/.nix-profile/bin/playerctl play"
+    [keys.action_hold]
+      exec = "/home/mvaldes/.nix-profile/bin/playerctl pause"
+[[keys]]
+  index = 11
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "~/git/deckmaster-config/assets/next-music.png"
+      label = "Next"
+    [keys.action]
+      exec = "/home/mvaldes/.nix-profile/bin/playerctl next"
+[[keys]]
+  index = 12
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "assets/volume-low.png"
+      label = "Vol Down"
+      fontsize = 8
+  [keys.action]
+    exec = "pactl set-sink-volume @DEFAULT_SINK@ -5%"
+[[keys]]
+  index = 13
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "assets/volume-high.png"
+      label = "Vol Up"
+      fontsize = 8
+  [keys.action]
+    exec = "pactl set-sink-volume @DEFAULT_SINK@ +5%"
+  [keys.action_hold]
+    exec = "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+[[keys]]
+  index = 14
+  [keys.widget]
+  id = "weather"
+  [keys.widget.config]
+    location = "Chaska" # optional
+    unit = "celsius" # optional
+    color = "#fefefe" # optional
+    flatten = true # optional
+    theme = "openmoji" # optional
