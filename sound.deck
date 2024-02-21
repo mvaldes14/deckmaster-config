@@ -1,0 +1,46 @@
+[[keys]]
+  index = 0
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "assets/images/angry.png"
+      label = "Censor"
+    [keys.action]
+      exec = "play -q assets/audio/censor.mp3"
+[[keys]]
+  index = 1
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "assets/images/cricket.png"
+      label = "Cri Cri"
+    [keys.action]
+      exec = "play -q assets/audio/cricket.mp3"
+[[keys]]
+  index = 2
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "assets/images/gospel.png"
+      label = "Aleluya"
+    [keys.action]
+      exec = "play -q assets/audio/gospel.mp3"
+[[keys]]
+  index = 3
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "assets/images/wind.png"
+      label = "Whoosh"
+    [keys.action]
+      exec = "play -q assets/audio/fart.mp3"
+[[keys]]
+  index = 14
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "assets/images/switch.png"
+      label = "Switch Deck"
+      fontsize = 8
+    [keys.action]
+      deck = "main.deck"
