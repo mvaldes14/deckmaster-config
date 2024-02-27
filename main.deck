@@ -127,9 +127,7 @@
       label = "Vol Up"
       fontsize = 8
     [keys.action]
-      exec = "pactl set-sink-volume @default_sink@ +5%"
-    [keys.action_hold]
-    exec = "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+      exec = "pactl set-sink-volume @DEFAULT_SINK@ +5%"
 [[keys]]
   index = 14
   [keys.widget]

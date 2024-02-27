@@ -35,6 +35,17 @@
     [keys.action]
       exec = "play -q ~/git/deckmaster-config/assets/audio/fart.mp3"
 [[keys]]
+  index = 4
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      icon = "assets/images/keyboard.png"
+      label = "Screenkey"
+    [keys.action]
+      exec = "screenkey --scr 1 -p fixed -g 30%x5%-10%+10% --no-whitespace --font {Hack}"
+    [keys.action_hold]
+    exec = "pkill screenkey"
+[[keys]]
   index = 14
   [keys.widget]
     id = "button"
