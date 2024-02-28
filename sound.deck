@@ -42,7 +42,7 @@
       icon = "assets/images/keyboard.png"
       label = "Screenkey"
     [keys.action]
-      exec = "screenkey --scr 1 -p fixed -g 20%x4%-3%+2% --no-whitespace"
+      exec = "screenkey --scr 1 -p fixed -g 20%x4%-3%+2% --no-whitespace --font {Hack}"
     [keys.action_hold]
     exec = "pkill screenkey"
 [[keys]]
